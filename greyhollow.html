@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GREYHOLLOW</title>
+  <style>
+    :root {
+      --bg: #110d0b;
+      --surface: #1c1612;
+      --fg: #f3eadb;
+      --muted: #b3a38e;
+      --primary: #b64034;
+      --line: #3a2e26;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Outfit", "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    p.kicker {
+      margin: 0 0 0.4rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    h1 {
+      font-family: "Cinzel", Georgia, serif;
+      font-weight: 500;
+      font-size: 2.6rem;
+      letter-spacing: 0.14em;
+      margin: 0 0 0.75rem;
+    }
+    h2 {
+      font-family: "Cinzel", Georgia, serif;
+      font-weight: 500;
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      margin: 2rem 0 0.75rem;
+    }
+    p { color: var(--muted); }
+    strong { color: var(--fg); font-weight: 600; }
+    ol { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    li { margin: 0.45rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      text-align: left;
+      padding: 0.55rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    td:first-child {
+      color: var(--fg);
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .note {
+      margin-top: 1.5rem;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid var(--primary);
+      background: var(--surface);
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Ashline Bureau · Field report 04</p>
+    <h1>GREYHOLLOW</h1>
+    <p>You are <strong>Mara Voss</strong>. The parish went dark three nights ago. This is an over-the-shoulder survival horror game: one village, scarce ammo, and things that hear you shoot.</p>
+
+    <h2>How to play</h2>
+    <table>
+      <thead>
+        <tr><th>Input</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>W A S D</td><td>Move. A strafes left, D strafes right.</td></tr>
+        <tr><td>Mouse</td><td>Aim. Click the view to capture the pointer. Right-drag works if capture is blocked.</td></tr>
+        <tr><td>Click</td><td>Fire the pistol, or the shotgun once you have it.</td></tr>
+        <tr><td>Shift</td><td>Sprint. It spends stamina.</td></tr>
+        <tr><td>Space</td><td>Dodge. Brief invulnerability, then a cooldown.</td></tr>
+        <tr><td>F</td><td>Knife. Also right-click while the pointer is captured.</td></tr>
+        <tr><td>R</td><td>Reload from the pack.</td></tr>
+        <tr><td>E</td><td>Use whatever the prompt names: crate, door, radio, brazier, chest.</td></tr>
+        <tr><td>Tab</td><td>Pack. Drag items, or use arrows and Enter. Herbs heal. Guns equip.</td></tr>
+        <tr><td>Esc</td><td>Pause. 1 and 2 swap weapons. The wheel does too.</td></tr>
+      </tbody>
+    </table>
+    <p>On a phone, a stick sits on the left, a look pad on the right, and Fire, Knife, Dodge, Use, and Reload sit along the bottom. Settings can force touch on or off, and also change sensitivity, volume, quality, and difficulty.</p>
+
+    <h2>The parish</h2>
+    <ol>
+      <li>Leave the ash road and reach the square. The hollowed patrol, investigate gunshots, and path around walls.</li>
+      <li>The mill desk has the <strong>barn key</strong>. The cottage cabinet has a <strong>shotgun</strong> and shells. Herbs are scarce.</li>
+      <li>In the barn cellar the mural gives the order: <strong>I, then III, then II</strong>. A wrong brazier snuffs them all. The chest holds the chapel sigil.</li>
+      <li>A field radio writes your progress into this browser. Death returns you to the last radio, not to the start.</li>
+      <li>The chapel seals when you enter. The <strong>Warden</strong> changes attacks as it weakens. Drop it and the bells stop.</li>
+    </ol>
+
+    <p class="note">You start with a knife, a pistol, and a few spare rounds. Headshots stagger the hollowed. The Warden does not.</p>
+  </main>
+</body>
+</html>

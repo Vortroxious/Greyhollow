@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Greyhollow">
+  <rect width="32" height="32" rx="7" fill="#110d0b"/>
+  <rect x="13" y="4" width="6" height="2.2" rx="0.6" fill="#c4894a"/>
+  <rect x="15.1" y="2.4" width="1.8" height="2.4" rx="0.4" fill="#f3eadb"/>
+  <path fill="#c4894a" d="M9.5 8.2h13l-1.4 2.6H10.9z"/>
+  <path fill="#1c1612" d="M11.2 11h9.6l-1.4 12.4h-6.8z"/>
+  <path fill="#b64034" d="M13 12.4h6l-.9 9.2h-4.2z"/>
+  <path fill="#c4894a" d="M10.2 23.6h11.6l-.9 2.8H11.1z"/>
+</svg>

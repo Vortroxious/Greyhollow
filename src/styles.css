@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #110d0b;
+  --color-surface: #1c1612;
+  --color-fg: #f3eadb;
+  --color-muted: #b3a38e;
+  --color-primary: #b64034;
+  --color-line: #3a2e26;
+  --font-display: "Cinzel", "Palatino Linotype", Palatino, serif;
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --radius: 0.25rem;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+#root,
+main {
+  height: 100%;
+}
+
+.vignette {
+  background: radial-gradient(ellipse at center, transparent 45%, #070504 100%);
+}
+
+.damage-flash {
+  background: radial-gradient(circle at center, transparent 25%, var(--color-primary) 130%);
+  animation: hurt-fade 480ms ease-out forwards;
+}
+
+.hit-mark {
+  animation: hurt-fade 180ms ease-out forwards;
+}
+
+@keyframes hurt-fade {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.menu-rise {
+  animation: menu-rise 700ms ease-out both;
+}
+
+@keyframes menu-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-rise,
+  .damage-flash,
+  .hit-mark {
+    animation: none;
+  }
+}
